@@ -10,6 +10,7 @@ namespace Kaizenko.GildedRose.Tests
         {
             Assert.Fail("Not yet implemented");
         }
+    }
 
         
 }
