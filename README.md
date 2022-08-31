@@ -36,6 +36,6 @@ TripService returns trips of a user's friend.
 
 
 Katas are modified versions of 
-1. Emily Bache's [Gilded Rose kata] (https://github.com/emilybache/GildedRose-Refactoring-Kata)
+1. Emily Bache's [Gilded Rose kata](https://github.com/emilybache/GildedRose-Refactoring-Kata)
 2. Christian Hujer's [Expense Report kata](https://github.com/christianhujer/expensereport)
 3. Sandro Mancuso's [Trip Service kata](https://github.com/sandromancuso/trip-service-kata)
