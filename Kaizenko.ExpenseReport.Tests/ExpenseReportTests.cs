@@ -14,10 +14,18 @@ namespace Kaizenko.ExpenseReport.Tests
             using (StringWriter sw = new StringWriter())
             {
                 Console.SetOut(sw);
-                ExpenseReport expenseReport = new ExpenseReport();
+                ExpenseReport expenseReport = new MyExpenseReport();
                 expenseReport.PrintReport(new System.Collections.Generic.List<Expense>());
                 ApprovalTests.Approvals.Verify(sw);
             }
+        }
+    }
+
+    public class MyExpenseReport : ExpenseReport
+    {
+        protected override DateTime GetDate()
+        {
+            return new DateTime(2018, 08, 23, 08, 12, 59);
         }
     }
 }

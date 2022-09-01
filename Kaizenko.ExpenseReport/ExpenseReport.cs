@@ -22,7 +22,7 @@ namespace Kaizenko.ExpenseReport
             int total = 0;
             int mealExpenses = 0;
 
-            Console.WriteLine("Expenses " + DateTime.Now);
+            Console.WriteLine("Expenses " + GetDate());
 
             foreach (Expense expense in expenses)
             {
@@ -58,6 +58,11 @@ namespace Kaizenko.ExpenseReport
 
             Console.WriteLine("Meal expenses: " + mealExpenses);
             Console.WriteLine("Total expenses: " + total);
+        }
+
+        protected virtual DateTime GetDate()
+        {
+            return DateTime.Now;
         }
     }
 }
