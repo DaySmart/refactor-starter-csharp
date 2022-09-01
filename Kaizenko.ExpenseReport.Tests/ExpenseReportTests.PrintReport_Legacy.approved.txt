@@ -1,0 +1,51 @@
+﻿Expenses 08/23/2018 08:12:59
+Dinner	500	 
+Dinner	1000	 
+Dinner	1500	 
+Dinner	2000	 
+Dinner	2500	 
+Dinner	3000	 
+Dinner	3500	 
+Dinner	4000	 
+Dinner	4500	 
+Dinner	5000	 
+Dinner	5500	X
+Dinner	6000	X
+Dinner	6500	X
+Dinner	7000	X
+Dinner	7500	X
+Dinner	8000	X
+Breakfast	500	 
+Breakfast	1000	 
+Breakfast	1500	X
+Breakfast	2000	X
+Breakfast	2500	X
+Breakfast	3000	X
+Breakfast	3500	X
+Breakfast	4000	X
+Breakfast	4500	X
+Breakfast	5000	X
+Breakfast	5500	X
+Breakfast	6000	X
+Breakfast	6500	X
+Breakfast	7000	X
+Breakfast	7500	X
+Breakfast	8000	X
+Car Rental	500	 
+Car Rental	1000	 
+Car Rental	1500	 
+Car Rental	2000	 
+Car Rental	2500	 
+Car Rental	3000	 
+Car Rental	3500	 
+Car Rental	4000	 
+Car Rental	4500	 
+Car Rental	5000	 
+Car Rental	5500	 
+Car Rental	6000	 
+Car Rental	6500	 
+Car Rental	7000	 
+Car Rental	7500	 
+Car Rental	8000	 
+Meal expenses: 136000
+Total expenses: 204000
