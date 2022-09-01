@@ -13,4 +13,8 @@
     <PackageReference Include="NUnit3TestAdapter" Version="4.2.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Kaizenko.TripService\Kaizenko.TripService.csproj" />
+  </ItemGroup>
+
 </Project>

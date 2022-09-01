@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 
 namespace Kaizenko.TripService
 {
@@ -26,6 +25,11 @@ namespace Kaizenko.TripService
         public List<Trip> Trips()
         {
             return trips;
+        }
+
+        public bool IsFriend(User user)
+        {
+            return friends.Contains(user);
         }
     }
 }

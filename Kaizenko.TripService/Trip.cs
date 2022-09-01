@@ -1,10 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Kaizenko.TripService
+﻿namespace Kaizenko.TripService
 {
     public class Trip
     {
+
+        public override string ToString()
+        {
+            return "A Trip";
+        }
     }
 }
