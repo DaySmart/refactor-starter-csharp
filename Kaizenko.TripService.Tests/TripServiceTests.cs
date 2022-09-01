@@ -15,15 +15,15 @@ namespace Kaizenko.TripService.Tests
             using (StringWriter sw = new StringWriter())
             {
                 TripService tripService;
-                var loggedInUser = new User();
-                var friendOfLoggedInUser = new User();
+                User loggedInUser = new User();
+                User friendOfLoggedInUser = new User();
                 friendOfLoggedInUser.AddFriend(loggedInUser);
 
                 // User not logged in
                 tripService = new TripService(new TripDAOTester(null));
                 try
                 {
-                    _ = tripService.GetTripsByUser(null, new User());
+                    _ = tripService.GetTripsByUser(new User(), null);
                 }
                 catch (Exception ex)
                 {
@@ -35,19 +35,19 @@ namespace Kaizenko.TripService.Tests
                 List<Trip> list = tripService.GetTripsByUser(new User(), new User());
                 sw.WriteLine((list != null && list.Count > 0 ? String.Join<Trip>(",", list.ToArray()) : "No Trips"));
 
-                // User logged in, is friend with no trip
+                // User logged in, is friend with no trips
                 tripService = new TripService(new TripDAOTester(new List<Trip>()));
-                list = tripService.GetTripsByUser(loggedInUser, friendOfLoggedInUser);
+                list = tripService.GetTripsByUser(friendOfLoggedInUser, loggedInUser);
                 sw.WriteLine((list != null && list.Count > 0 ? String.Join<Trip>(",", list.ToArray()) : "No Trips"));
 
                 // User logged in, is friend with one trip
                 tripService = new TripService(new TripDAOTester(new List<Trip>() { new Trip() }));
-                list = tripService.GetTripsByUser(loggedInUser, friendOfLoggedInUser);
+                list = tripService.GetTripsByUser(friendOfLoggedInUser, loggedInUser);
                 sw.WriteLine((list != null && list.Count > 0 ? String.Join<Trip>(",", list.ToArray()) : "No Trips"));
 
                 // User logged in, is friend with multiple trips
                 tripService = new TripService(new TripDAOTester(new List<Trip>() { new Trip(), new Trip() }));
-                list = tripService.GetTripsByUser(loggedInUser, friendOfLoggedInUser);
+                list = tripService.GetTripsByUser(friendOfLoggedInUser, loggedInUser);
                 sw.WriteLine((list != null && list.Count > 0 ? String.Join<Trip>(",", list.ToArray()) : "No Trips"));
 
                 ApprovalTests.Approvals.Verify(sw);
@@ -62,7 +62,7 @@ namespace Kaizenko.TripService.Tests
                 _trips = trips;
             }
 
-            public override List<Trip> FindTripsByUser(User user)
+            public override List<Trip> GetTripsByUser(User user)
             {
                 return _trips;
             }
