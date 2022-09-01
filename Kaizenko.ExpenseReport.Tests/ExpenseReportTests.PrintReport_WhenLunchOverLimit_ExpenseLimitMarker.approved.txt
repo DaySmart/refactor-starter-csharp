@@ -1,0 +1,4 @@
+﻿Expenses 8/23/2018 8:12:59 AM
+Lunch	2001	X
+Meal expenses: 2001
+Total expenses: 2001

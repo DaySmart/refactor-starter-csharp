@@ -1,0 +1,4 @@
+﻿Expenses 8/23/2018 8:12:59 AM
+Lunch	999	 
+Meal expenses: 999
+Total expenses: 999
